@@ -29,7 +29,7 @@ p {
 }
 
 button {
-  display: block;
+  display: none;
 }
 
 button.visible, p {
