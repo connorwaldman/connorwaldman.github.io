@@ -35,26 +35,26 @@
         
         authorize();
         
+        
         function authorize() {
             // Attempt to authorize
             realtimeUtils.authorize(function(response){
                 if(response.error){
-                    start();
-                    });
-                  } else {
-                                    
-                // Authorization failed because this is the first time the user has used your application,
-                // show the authorize button to prompt them to authorize manually.
+                                    // Authorization failed because this is the first time the user has used your application,
+                                    // show the authorize button to prompt them to authorize manually.
                     var button = document.getElementById('auth_button');
                     button.classList.add('visible');
                     button.addEventListener('click', function () {
-                        realtimeUtils.authorize(function(response){
-                            start();
-                        }, true);
-                        
-                    }
-                  }, false);
+                    realtimeUtils.authorize(function(response){
+                        start();
+                    }, true);
+                });
+                } else {
+                    start();
+                  }
+                }, false);
         }
+
         
         function start() {
             // With auth taken care of, load a file, or create one if there
@@ -129,19 +129,19 @@
                 close_delim;
                 
                 var request = gapi.client.request({
-                                                  'path': '/upload/drive/v2/files',
-                                                  'method': 'POST',
-                                                  'params': {'uploadType': 'multipart'},
-                                                  'headers': {
-                                                  'Content-Type': 'multipart/mixed; boundary="' + boundary + '"'
-                                                  },
-                                                  'body': multipartRequestBody});
-                                                  if (!callback) {
-                                                      callback = function(file) {
-                                                          console.log(file)
-                                                      };
-                                                  }
-                                                  request.execute(callback);
+                    'path': '/upload/drive/v2/files',
+                    'method': 'POST',
+                    'params': {'uploadType': 'multipart'},
+                    'headers': {
+                    'Content-Type': 'multipart/mixed; boundary="' + boundary + '"'
+                     },
+                    'body': multipartRequestBody});
+                    if (!callback) {
+                        callback = function(file) {
+                            console.log(file)
+                        };
+                    }
+                    request.execute(callback);
             }
         }
         </script>
