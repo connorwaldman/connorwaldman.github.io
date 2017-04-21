@@ -22,7 +22,7 @@
             <textarea id="text_area_2"></textarea>
             
             <button id="auth_button">Authorize</button>
-            <button id="insert_button">start</button>
+            <button id="start_button">start</button>
             
             
         </main>
@@ -67,7 +67,7 @@
                 // Load the document id from the URL
                 realtimeUtils.load(id.replace('/', ''), onFileLoaded, onFileInitialize);
             } else {
-                 var button = document.getElementById('auth_button');
+                 var button = document.getElementById('start_button');
                     button.classList.add('visible');
                     button.addEventListener('click', function () {
                 // Create a new document, add it to the URL
