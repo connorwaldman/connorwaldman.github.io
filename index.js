@@ -50,7 +50,7 @@ var clientId = '843081425189-tcs4ds00t8sbj5ne54fu0d2au7gfroj0.apps.googleusercon
         // to our model at the root.
         function onFileInitialize(model) {
             var string = model.createString();
-            string.setText('Welcome to the Quickstart App!');
+            string.setText('Collaborate away!');
             model.getRoot().set('demo_string', string);
         }
         
