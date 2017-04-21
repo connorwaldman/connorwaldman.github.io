@@ -10,8 +10,13 @@ main {
 }
 
 textarea {
-  width: calc(70% - 8px);
+  width: calc(90% - 8px);
   height: 400px;
+}
+
+form {
+  width: calc(90% - 8px);
+  height: 90%
 }
 
 #json_textarea {
