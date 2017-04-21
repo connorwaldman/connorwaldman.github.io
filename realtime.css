@@ -36,7 +36,7 @@ button.visible, p {
   display: block;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1280px) {
   textarea {
     width: 100%;
     margin-bottom: 10px;
