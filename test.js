@@ -6,7 +6,7 @@ QUnit.test( "hello test", function( assert ) {
   assert.ok( 1 == "1", "Passed!" );
 });
 
-QUnit.test( "hello test", function( assert ) {
-  expect(
+QUnit.test( "authorize", function( assert ) {
+  assert.equal(index.authorize, true)
 });
 
