@@ -1,0 +1,54 @@
+<link rel="import" href="/components/polymer/polymer.html">
+<link rel="import" href="/components/core-animated-pages/transitions/slide-up.html">
+<link rel="import" href="/components/paper-input/paper-input.html">
+<link rel="import" href="/components/paper-button/paper-button.html">
+<link rel="import" href="/components/paper-spinner/paper-spinner.html">
+<link rel="import" href="extra-icons.html">
+
+<polymer-element name="create-document">
+  <template>
+    <link rel="stylesheet" href="create-document.css">
+    <app-globals id="globals"></app-globals>
+      <core-animated-pages id="createPage" selected="{{page}}" transitions="slide-up" on-core-animated-pages-transition-end="{{complete}}">
+        <section layout vertical>
+          <div class="icons">
+            <div class="create-document-jumbo-icon" cross-fade on-click="{{ onCreateDriveDocumentClick }}">
+              <core-icon id="createDrive" icon="note-add"></core-icon>
+              <div class="subtitle">Create Realtime Document</div>
+            </div>
+            <div class="create-document-jumbo-icon" cross-fade on-click="{{ onOpenDriveDocumentClick }}">
+              <core-icon id="openDrive" icon="extras:drive"></core-icon>
+              <div class="subtitle">Open Drive Document</div>
+            </div>
+          </div>
+        </section>
+        <section id="create" layout vertical>
+          <div id="panelBackground" slide-up>
+            <div id="panel">
+              <div flex class="panel">
+                <div class="top">
+                  <h1>New Realtime Document</h1>
+                  <core-icon icon="note-add" ></core-icon>
+                </div>
+                <div class="bottom">
+                  <paper-spinner id="loader1" active class="hidden"></paper-spinner>
+                  <paper-input id="name" label="Document Name" inputValue="{{ documentName }}"></paper-input>
+                  <paper-button raised id="create" on-click="{{ createDriveDocument }}" disabled?="{{ documentName.length == 0 }}">Create</paper-button>
+                </div>
+              </div>
+              <core-icon id="back" icon="arrow-back" on-click="{{ back }}"></core-icon>
+            </div>
+          </div>
+        </section>
+        <section id="load" layout vertical>
+          <div id="panelBackground" cross-fade></div>
+          <div class="create-document-jumbo-icon" cross-fade>
+              <core-icon id="createDrive" icon="cloud-circle"></core-icon>
+              <div class="subtitle">Loading document...</div>
+            </div>
+        </section>
+      </core-animated-pages>
+    </div>
+  </template>
+  <script src="create-document.js"></script>
+</polymer-element>
