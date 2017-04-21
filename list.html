@@ -80,27 +80,27 @@
         }
         
         // The first time a file is opened, it must be initialized with the
-        // document structure. This function will add a collaborative string
+        // document structure. This function will add a collaborative list
         // to our model at the root.
         function onFileInitialize(model) {
-            var string = model.createString();
-            string.setText('Welcome to the Quickstart App!');
-            model.getRoot().set('demo_string', string);
+            var string = model.createList();
+           collaborativeList.pushAll(['one', 'two', 'three', 'four', 'five']);
+            model.getRoot().set('demo_list', collaborativeList);
         }
         
         // After a file has been initialized and loaded, we can access the
         // document. We will wire up the data model to the UI.
         function onFileLoaded(doc) {
-            var collaborativeString = doc.getModel().getRoot().get('demo_string');
-            wireTextBoxes(collaborativeString);
+            var collaborativeString = doc.getModel().getRoot().get('demo_list');
+            wireTextBoxes(collaborativeList);
         }
         
         // Connects the text boxes to the collaborative string
         function wireTextBoxes(collaborativeString) {
             var textArea1 = document.getElementById('text_area_1');
             var textArea2 = document.getElementById('text_area_2');
-            gapi.drive.realtime.databinding.bindString(collaborativeString, textArea1);
-            gapi.drive.realtime.databinding.bindString(collaborativeString, textArea2);
+            gapi.drive.realtime.databinding.bindString(collaborativeList, textArea1);
+            gapi.drive.realtime.databinding.bindString(collaborativeList, textArea2);
         }
       
             /**
