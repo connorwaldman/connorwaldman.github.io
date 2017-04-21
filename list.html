@@ -18,8 +18,7 @@
             <h1>List</h1>
             <h2> <a href = "http://connorwaldman.github.io/Recipe.html">List</a> </h2>
             <p> <a onclick="window.open(window.location.href);return false;" target="_blank">New Tab</a> </p>
-            <textarea id="text_area_1"></textarea>
-            <textarea id="text_area_2"></textarea>
+            <ul id="list_1"></ul>
             
             <button id="auth_button">Authorize</button>
             <button id="start_button">start</button>
@@ -96,10 +95,10 @@
         }
         
         // Connects the text boxes to the collaborative string
-        function wireTextBoxes(collaborativeList) {
-            var textArea1 = document.getElementById('text_area_1');
+        function wireLists(collaborativeList) {
+            var list1 = document.getElementById('list_1');
             var textArea2 = document.getElementById('text_area_2');
-            gapi.drive.realtime.databinding.bindString(collaborativeList, textArea1);
+            gapi.drive.realtime.databinding.bindString(collaborativeList, list1);
             gapi.drive.realtime.databinding.bindString(collaborativeList, textArea2);
         }
       
