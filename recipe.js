@@ -62,8 +62,8 @@ var clientId = '843081425189-tcs4ds00t8sbj5ne54fu0d2au7gfroj0.apps.googleusercon
         
         // Connects the text boxes to the collaborative string
         function wireTextBoxes(collaborativeString) {
+            var List1 = document.getElementById('List_1');
             var textArea1 = document.getElementById('text_area_1');
-            var textArea2 = document.getElementById('text_area_2');
             gapi.drive.realtime.databinding.bindString(collaborativeString, textArea1);
             gapi.drive.realtime.databinding.bindString(collaborativeString, textArea2);
         }
