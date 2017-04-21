@@ -91,15 +91,15 @@
         // document. We will wire up the data model to the UI.
         function onFileLoaded(doc) {
             var collaborativeString = doc.getModel().getRoot().get('demo_list');
-            wireTextBoxes(collaborativeList);
+            wireLists(collaborativeList);
         }
         
         // Connects the text boxes to the collaborative string
         function wireLists(collaborativeList) {
             var list1 = document.getElementById('list_1');
-            var textArea2 = document.getElementById('text_area_2');
+           
             gapi.drive.realtime.databinding.bindString(collaborativeList, list1);
-            gapi.drive.realtime.databinding.bindString(collaborativeList, textArea2);
+            
         }
       
             /**
