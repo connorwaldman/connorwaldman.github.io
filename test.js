@@ -7,6 +7,6 @@ QUnit.test( "hello test", function( assert ) {
 });
 
 QUnit.test( "authorize", function( assert ) {
-  assert.equal(index.authorize, true)
+  assert.equal(index.authorize == true, "Passed");
 });
 
