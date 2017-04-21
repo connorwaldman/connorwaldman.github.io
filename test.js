@@ -1,5 +1,3 @@
-module('Test Group');
-
 <script src="index.js"></script>
 
 QUnit.test( "hello test", function( assert ) {
