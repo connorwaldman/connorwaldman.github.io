@@ -47,9 +47,10 @@ button.visible, p {
 }
 
 #list-element {
+  text-align: left;
 }
 
-sidebar-link {
+#list-element.hover {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
