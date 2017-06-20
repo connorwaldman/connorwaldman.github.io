@@ -48,6 +48,7 @@ button.visible, p {
 
 #list-element {
   text-align: left;
+  list-style: none;
 }
 
 #list-element.hover {
