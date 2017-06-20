@@ -46,6 +46,9 @@ button.visible, p {
   text-align: left;
 }
 
+#list-element {
+}
+
 sidebar-link {
   display: inline-block;
   vertical-align: middle;
