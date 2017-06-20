@@ -41,7 +41,7 @@ button.visible, p {
   display: block;
 }
 
-sidebar {
+#sidebar {
   position: absolute;
   left: 0px;
 }
