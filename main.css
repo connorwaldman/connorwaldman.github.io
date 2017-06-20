@@ -41,6 +41,11 @@ button.visible, p {
   display: block;
 }
 
+sidebar {
+  position: absolute;
+  left: 0px
+}
+
 sidebar-link {
   display: inline-block;
   vertical-align: middle;
