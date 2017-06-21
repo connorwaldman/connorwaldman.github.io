@@ -51,7 +51,7 @@ button.visible, p {
   list-style: none;
 }
 
-#list-element.hover {
+#sidebar.hover {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
