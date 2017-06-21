@@ -2,42 +2,24 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+ background: #ffffff;
+    padding: 30px 0px 0 30px;
+    padding-top: 30px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 30px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    line-height: 1em;
+    text-rendering: optimizeLegibility;
+    text-align: left;
+    min-width: 275px;
+    max-width: 970px;
 }
 
 main {
   width: 80%;
   margin: 0 auto;
-}
-
-textarea {
-  width: calc(90% - 8px);
-  height: 400px;
-}
-
-form {
-  width: calc(90% - 8px);
-  height: 90%
-}
-
-#json_textarea {
-  width: 100%;
-}
-
-a {
-  color: #000000;
-  cursor: pointer;
-}
-
-p {
-  display: block;
-}
-
-button {
-  display: none;
-}
-
-button.visible, p {
-  display: block;
 }
 
 #sidebar {
