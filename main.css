@@ -21,10 +21,12 @@ body {
 main {
   width: 80%;
   margin: 0 auto;
+  text-decoration: none;
 }
 
 #main-header {
  text-align: left; 
+  text-decoration: none;
 }
 
 #sidebar {
@@ -54,7 +56,7 @@ main {
   transition-property: transform;
 }
 
-#list-element a:hover {
+#list-element a:vistited, a:hover, a:active  {
  -webkit-transform: translateX(8px);
   transform: translateX(8px);
 }
