@@ -34,6 +34,10 @@ main {
   text-decoration: none;
 }
 
+#logo {
+  right: 20px;
+}
+
 #sidebar {
   position: absolute;
   padding: 78px 0 120px 30px;
