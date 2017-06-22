@@ -41,7 +41,7 @@ main {
 #sidebar {
   position: absolute;
   padding: 78px 0 120px 30px;
-    padding-top: 78px;
+    padding-top: 0px;
     padding-right: 0px;
     padding-bottom: 120px;
     padding-left: 30px;
