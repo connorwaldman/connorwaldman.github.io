@@ -39,7 +39,7 @@ main {
   text-align: left;
 }
 
-list-element {
+#list-element a {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -54,7 +54,7 @@ list-element {
   list-style: none;
 }
 
-list-element:hover {
+#list-element a:hover {
  -webkit-transform: skew(-10deg);
   transform: skew(-10deg);
 }
