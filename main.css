@@ -40,11 +40,8 @@ main {
 }
 
 list-element {
-  text-align: left;
-  list-style: none;
-}
-
-list-element:hover {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px transparent;
@@ -54,6 +51,11 @@ list-element:hover {
   transition-property: transform;
   -webkit-transform-origin: 0 100%;
   transform-origin: 0 100%;
+}
+
+list-element:hover {
+ -webkit-transform: skew(-10deg);
+  transform: skew(-10deg);
 }
 
 @media (max-width: 1280px) {
