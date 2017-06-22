@@ -56,7 +56,7 @@ main {
   transition-property: transform;
 }
 
-#list-element a:vistited, a:hover, a:active  {
+#list-element a:hover, a:active  {
  -webkit-transform: translateX(8px);
   transform: translateX(8px);
 }
