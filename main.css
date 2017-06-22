@@ -51,6 +51,7 @@ list-element {
   transition-property: transform;
   -webkit-transform-origin: 0 100%;
   transform-origin: 0 100%;
+  list-style: none;
 }
 
 list-element:hover {
