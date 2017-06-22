@@ -38,6 +38,7 @@ main {
     max-width: 970px;
   left: 0px;
   text-align: left;
+  text-decoration: none;
 }
 
 #list-element a {
