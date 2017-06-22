@@ -44,7 +44,7 @@ main {
   list-style: none;
 }
 
-#list-element.hover {
+#list-element:hover {
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px transparent;
