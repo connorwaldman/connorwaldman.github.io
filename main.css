@@ -18,6 +18,11 @@ body {
   text-decoration: none;
 }
 
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
 main {
   width: 80%;
   margin: 0 auto;
