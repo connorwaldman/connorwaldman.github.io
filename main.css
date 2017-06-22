@@ -50,14 +50,11 @@ main {
   transition-duration: 0.3s;
   -webkit-transition-property: transform;
   transition-property: transform;
-  -webkit-transform-origin: 0 100%;
-  transform-origin: 0 100%;
-  list-style: none;
 }
 
 #list-element a:hover {
- -webkit-transform: skew(-10deg);
-  transform: skew(-10deg);
+ -webkit-transform: translateX(8px);
+  transform: translateX(8px);
 }
 
 @media (max-width: 1280px) {
