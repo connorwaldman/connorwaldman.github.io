@@ -37,6 +37,7 @@ main {
 #logo {
   padding-left: 300px;
   text-align: bottom;
+  text-decoration: none;
 }
 
 #sidebar {
