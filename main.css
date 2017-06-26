@@ -47,6 +47,7 @@ main {
 
 #logo {
   font-family: 'Work Sans', sans-serif, 300;
+  font-size: 40px;
   padding-left: 300px;
   display: inline-block;
   text-decoration: none;
