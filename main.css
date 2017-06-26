@@ -57,7 +57,7 @@ main {
     padding-top: 0px;
     padding-right: 0px;
     padding-bottom: 70px;
-    padding-left: 30px;
+    padding-left: 40px;
     min-width: 275px;
     max-width: 970px;
   margin: 0px;
@@ -87,7 +87,7 @@ main {
 
 #container {
   padding-top: 120px;
-  padding-left: 300px;
+  padding-left: 0px;
   margin: 0px;
   left: 0px;
   
