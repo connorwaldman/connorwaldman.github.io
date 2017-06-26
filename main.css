@@ -35,6 +35,7 @@ main {
 }
 
 #logo {
+  padding-top: 100px;
   padding-left: 300px;
   text-align: bottom;
   text-decoration: none;
