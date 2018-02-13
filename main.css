@@ -21,6 +21,7 @@ body {
 
 a:link {
   text-decoration: none;
+  color: black;
 }
 
 a:visited {
@@ -30,6 +31,7 @@ a:visited {
 
 a: active {
   text-decoration: none;
+  color: black;
 }
 
 main {
@@ -39,7 +41,7 @@ main {
 }
 
 #main-header {
- text-align: left; 
+  text-align: left; 
   text-decoration: none;
 }
 
