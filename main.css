@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans');
-
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 
 body {
   font-family: 'Work Sans', sans-serif;
@@ -46,7 +46,7 @@ main {
 }
 
 #logo {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 28px;
   padding-left: 300px;
   display: inline-block;
