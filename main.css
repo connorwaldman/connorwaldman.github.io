@@ -41,14 +41,14 @@ main {
 }
 
 #main-header {
-  text-align: left; 
+  text-align: right; 
   text-decoration: none;
 }
 
 #logo {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 28px;
-  padding-left: 300px;
+  padding-right: 100px;
   display: inline-block;
   text-decoration: bold;
   
@@ -56,18 +56,24 @@ main {
 
 #sidebar {
   position: absolute;
-    padding-top: 50px;
-    padding-right: 0px;
-    padding-bottom: 70px;
-    padding-left: 38px;
-    min-width: 275px;
-    max-width: 970px;
-  margin: 0px;
-  left: 0px;
+    padding-top: 0px;
+    padding-right: 10px;
+    padding-bottom: 400px;
+    padding-left: 5px;
+    min-width: 100px;
+    max-width: 10px;
+    margin: 0px;
+    top: 120px;
+    left: 35px;
   
   text-align: left;
   text-decoration: none;
   list-style-type: none;
+  border-style: solid;
+    border-left: black;
+    border-bottom: black;
+    border-top: black;
+    border-right-width: 5px;
 }
 
 #list-element a {
@@ -88,8 +94,8 @@ main {
 }
 
 #container {
-  padding-top: 50px;
-  padding-left: 10px;
+  padding-top: 120px;
+  padding-left: 0px;
   margin: 0px;
   left: 0px;
   
