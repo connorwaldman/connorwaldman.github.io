@@ -29,7 +29,7 @@ a:visited {
   color: black;
 }
 
-a: active {
+a:active {
   text-decoration: none;
   color: black;
 }
@@ -106,4 +106,23 @@ main {
     width: 100%;
     margin-bottom: 10px;
   }
+}
+
+.logo-anim {
+  animation: logo-anim 1.2s ease-out;
+  -moz-animation: logo-anim 1.2s ease-out;
+  -webkit-animation: logo-anim 1.2s ease-out;
+}
+
+@keyframes logo-anim {
+  from { left: 500px; opacity: 0; visibility: hidden;}
+  to {left: 0px; opacity: 1; visibility: visible;}
+}
+@-moz-keyframes logo-anim {
+  from {left: 500px; opacity: 0; visibility: hidden;}
+  to {left: 0px; opacity: 1; visibility: visible;}
+}
+@-webkit-keyframes logo-anim {
+  from {left: 500px; opacity: 0; visibility: hidden;}
+  to {left: 0px; opacity: 1; visibility: visible;}
 }
