@@ -1,3 +1,3 @@
 $(window).on("load", function() {
-    $('#logo').addClass('box-anim1');
+    $('#logo').addClass('logo-anim');
 });
