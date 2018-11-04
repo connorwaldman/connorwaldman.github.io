@@ -98,6 +98,11 @@ main {
   padding-left: 20px;
   margin: 0px;
   left: 0px;
+  opacity: 1;
+  -webkit-animation: fadeLeft 1s 1 cubic-bezier(0.77, 0, 0.175, 1);
+    -moz-animation: fadeLeft 1s 1 cubic-bezier(0.77, 0, 0.175, 1);
+    -o-animation: fadeLeft 1s 1 cubic-bezier(0.77, 0, 0.175, 1);
+    animation: fadeLeft 1s 1 cubic-bezier(0.77, 0, 0.175, 1)
   
 }
 
@@ -105,8 +110,8 @@ main {
   display: table;         
   width: auto;         
   background-color: #eee;         
-  border: 1px solid #666666;         
-  border-spacing: 5px; /* cellspacing:poor IE support for  this */
+  border: 0px;         
+  border-spacing: 5px; 
 }
 
 .divTableRow {
@@ -117,9 +122,9 @@ main {
 
 .divTableCell {
   display: table-cell;
-  float: left; /* fix for  buggy browsers */         
+  float: left;        
   width: 200px;         
-  background-color: #ccc;  
+  background-color: #eee;  
 }
 
 @media (max-width: 1280px) {
@@ -129,21 +134,3 @@ main {
   }
 }
 
-.logo-anim {
-  animation: logo-anim 1.2s ease-out;
-  -moz-animation: logo-anim 1.2s ease-out;
-  -webkit-animation: logo-anim 1.2s ease-out;
-}
-
-@keyframes logo-anim {
-  from { left: 500px; opacity: 0; visibility: hidden;}
-  to {left: 0px; opacity: 1; visibility: visible;}
-}
-@-moz-keyframes logo-anim {
-  from {left: 500px; opacity: 0; visibility: hidden;}
-  to {left: 0px; opacity: 1; visibility: visible;}
-}
-@-webkit-keyframes logo-anim {
-  from {left: 500px; opacity: 0; visibility: hidden;}
-  to {left: 0px; opacity: 1; visibility: visible;}
-}
