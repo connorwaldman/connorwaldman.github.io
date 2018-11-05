@@ -98,30 +98,29 @@ main {
   padding-left: 20px;
   margin: 0px;
   left: 0px;
-  opacity: 1;
   -webkit-animation: fadeLeft 1s 1 cubic-bezier(0.77, 0, 0.175, 1);
-    -moz-animation: fadeLeft 1s 1 cubic-bezier(0.77, 0, 0.175, 1);
-    -o-animation: fadeLeft 1s 1 cubic-bezier(0.77, 0, 0.175, 1);
-    animation: fadeLeft 1s 1 cubic-bezier(0.77, 0, 0.175, 1)
+  -moz-animation: fadeLeft 1s 1 cubic-bezier(0.77, 0, 0.175, 1);
+  -o-animation: fadeLeft 1s 1 cubic-bezier(0.77, 0, 0.175, 1);
+  animation: fadeLeft 1s 1 cubic-bezier(0.77, 0, 0.175, 1);
 } 
   @-moz-keyframes fadeLeft {
       from {
-         margin-left:100%;
-         width:300%
+         margin-left: -300px;
+         opacity: 0;
       }
       to {
-         margin-left:0%;
-         width:100%;
+         margin-left: 0px;
+         opacity: 1;
       }
    }
    @-webkit-keyframes fadeLeft {
       from {
-         margin-left:100%;
-         width:300%
+         margin-left: -300px;
+         opacity: 0;
       }
       to {
-         margin-left:0%;
-         width:100%;
+         margin-left: 0px;
+         opacity: 1;
       }
     }
 
