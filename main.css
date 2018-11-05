@@ -105,7 +105,7 @@ main {
 } 
   @-moz-keyframes fadeLeft {
       from {
-         margin-left: -300px;
+         margin-left: -10px;
          opacity: 0;
       }
       to {
@@ -115,7 +115,7 @@ main {
    }
    @-webkit-keyframes fadeLeft {
       from {
-         margin-left: -300px;
+         margin-left: -10px;
          opacity: 0;
       }
       to {
