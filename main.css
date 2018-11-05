@@ -103,8 +103,27 @@ main {
     -moz-animation: fadeLeft 1s 1 cubic-bezier(0.77, 0, 0.175, 1);
     -o-animation: fadeLeft 1s 1 cubic-bezier(0.77, 0, 0.175, 1);
     animation: fadeLeft 1s 1 cubic-bezier(0.77, 0, 0.175, 1)
-  
-}
+} 
+  @-moz-keyframes fadeLeft {
+      from {
+         margin-left:100%;
+         width:300%
+      }
+      to {
+         margin-left:0%;
+         width:100%;
+      }
+   }
+   @-webkit-keyframes fadeLeft {
+      from {
+         margin-left:100%;
+         width:300%
+      }
+      to {
+         margin-left:0%;
+         width:100%;
+      }
+    }
 
 .divTable {
   display: table;         
@@ -124,7 +143,7 @@ main {
   display: table-cell;
   float: left;        
   width: 200px;         
-  background-color: #eee;  
+  background-color: inherit;  
 }
 
 @media (max-width: 1280px) {
