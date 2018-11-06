@@ -103,6 +103,16 @@ main {
   -o-animation: fadeLeft 1s 1 cubic-bezier(0.77, 0, 0.175, 1);
   animation: fadeLeft 1s 1 cubic-bezier(0.77, 0, 0.175, 1);
 } 
+  @keyframes fadeLeft {
+    from {
+      margin-left: -10px;
+      opacity: 0;
+   }
+   to {
+      margin-left: 0px;
+      opacity: 1;
+   }
+  }
   @-moz-keyframes fadeLeft {
       from {
          margin-left: -10px;
@@ -142,7 +152,7 @@ main {
   display: table-cell;
   float: left;        
   width: 200px;         
-  background-color: inherit;  
+  background-color: #eee;  
 }
 
 @media (max-width: 1280px) {
