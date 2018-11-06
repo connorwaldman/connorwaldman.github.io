@@ -146,6 +146,7 @@ main {
   display: table-row;
   width: auto;
   clear: both;
+  background-color: #eee;
 }
 
 .divTableCell {
