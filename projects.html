@@ -9,11 +9,14 @@
     <link href="https://connorwaldman.github.io/main.css" rel="stylesheet" type="text/css" />
     <link rel="icon" href="images/favicon16.png">
     <link rel="icon" href="images/favicon32.png">
-    <script src="loader.js"></script>
+    
 
 </head>
 
 <body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
 
     <div id="main-header">
         <div id="logo">
@@ -31,8 +34,10 @@
         <div class="divTable">
             <div class="divTableRow">
                 <div class="divTableCell">
-                    <div class="image"><a onclick="loadDoc(details.php, myFunction)" title="p1-image"><img
-                            src="images/pme.jpg" alt="pme"></a></div>
+                    <div class="image">
+                        <a>
+                        <img id="one" src="images/pme.jpg" alt="pme"></a>
+                    </div>
                     <h4 class="title">Personalized Music Explorer</h4>
                     <p class="caption">2018</p>
                 </div>
@@ -70,7 +75,7 @@
                 </div>
 
             </div>
-
+            <script src="loader.js"></script>
 
             <footer id="main-footer">
             </footer>
