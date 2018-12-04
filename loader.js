@@ -1,5 +1,5 @@
 $("#one").click(function() {
-    $("#container").load("details.html #p"); 
+    $("#container").load("https://connorwaldman.github.io/details.html"); 
 });
 
 
