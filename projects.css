@@ -153,12 +153,13 @@ main {
   display: table-cell;
   float: left;        
   width: 200px;         
-  background-color: white;  
+  background-color: white; 
+  opacity: 1;
+  transition: .5s ease-in-out; 
 }
 
 .divTableCell:hover .image {
   opacity: 0.5;
-  transition: .5s ease;
 }
 
 @media (max-width: 1280px) {
